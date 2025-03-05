@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo FizzNunu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="instructions">
+            <h1>Bem-vindo ao Jogo do FizzNunu!</h1>
+            <p>As regras são simples:</p>
+            <ul>
+                <li>Conte de 1 a 100, mas com algumas diferenças.</li>
+                <li>Se o número for divisível por 2, fale <strong>Fizz</strong>.</li>
+                <li>Se o número for divisível por 3, fale <strong>Nunu</strong>.</li>
+                <li>Se o número for divisível por ambos, fale <strong>FizzNunu</strong>.</li>
+                <li>Caso contrário, fale apenas o número.</li>
+            </ul>
+            <p>Dispute com seus amigos e veja quem acerta mais em menos tempo!</p>
+            <button id="start-button">Começar Jogo</button>
+        </div>
+        <div id="game" style="display: none;">
+            <div id="stopwatch">Tempo decorrido: 0.00 segundos</div>
+            <div id="number-display"></div>
+            <button id="next-button">Próximo</button>
+        </div>
+        <div id="completion" style="display: none;">
+            <h2>Parabéns! Você completou o jogo.</h2>
+            <p id="time-taken"></p>
+            <button id="restart-button">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
